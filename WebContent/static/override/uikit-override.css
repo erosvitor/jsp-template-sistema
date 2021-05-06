@@ -1,0 +1,73 @@
+:root {
+  /*
+  --bg-menu: #2FA481;
+  --color-default: #004C35;
+  */ 
+  --bg-menu: #2F8DA4;
+  --color-default: #003D4C;
+}
+
+/*******************************************************************************************
+ TABLE
+********************************************************************************************/
+.uk-table td {
+  vertical-align: middle;
+}
+
+.uk-table thead th {
+  vertical-align: middle;
+}
+
+/*******************************************************************************************
+ NAV
+********************************************************************************************/
+.uk-nav-navbar > li > a {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+.uk-nav-dropdown>li>a:focus, .uk-nav-dropdown>li>a:hover, .uk-nav-navbar > li > a:focus, .uk-nav-navbar > li > a:hover {
+  background: var(--bg-menu);
+}
+
+.uk-navbar-nav > li > a {
+  display: flex;
+  align-items: center;
+}
+
+/*******************************************************************************************
+ BUTTON
+********************************************************************************************/
+.uk-button.switch-button.uk-active.switch-neg {
+  background: #BC1F03;
+}
+
+/*******************************************************************************************
+ TAB
+********************************************************************************************/
+.uk-tab > li > a {
+  color: #333;
+}
+
+.uk-tab > li > a:hover {
+  color: #000;
+}
+
+/*******************************************************************************************
+ MODAL
+********************************************************************************************/
+.uk-modal-header i {
+  font-size: 1.8em;
+  vertical-align: middle;
+  width: 25px;
+  text-align: center;
+  color: var(--color-default);
+  margin: 0 15px;
+}
+
+.uk-modal-header span {
+  color: var(--color-default);
+  font-size: 1.4em;
+  vertical-align: middle;
+}

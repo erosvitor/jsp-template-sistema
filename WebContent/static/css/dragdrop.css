@@ -1,0 +1,91 @@
+:root {
+  /*
+  --color-default: #004C35;
+  */
+  --color-default: #003D4C;
+}
+
+.association-list-section {
+  height: 100%;
+  width: 49%;
+  flex-direction: column;
+  display: flex;
+  border: 1px solid #CCC;
+}
+
+.association-list-section > div.uk-sortable {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.association-list-section-title {
+  margin: 7px;
+  color: var(--color-default);
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.association-list-item, .sortable-item-dragging {
+  border: solid 1px #DDD;
+  color: #444;
+  margin: 7px;
+  padding: 7px;
+  box-shadow: 0 2px 3px -3px;
+  border-radius: 2px;
+  background: #FFF;
+}
+
+div[data-uk-sortable] > .association-list-item, .sortable-item-dragging {
+  cursor: move;
+}
+
+.sortable-item-dragging {
+  font-size: 0.9em;
+}
+
+.association-list-item[draggable=false] {
+  cursor: default;
+}
+
+.association-list-item-title {
+  margin: 0;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.association-list-item-subcontent {
+}
+
+.association-list-item-subcontent.subcontent-collapsed {
+  display: none;
+}
+
+.association-list-item-toggle {
+  height: 36px;
+  cursor: pointer;
+  width: 36px;
+  margin: -7px;
+  position: relative;
+}
+
+.association-list-item-toggle:before {
+  content: "❯";
+  position: absolute;
+  transform-origin: 6px 11px;
+  top: 8px;
+  cursor: pointer;
+  left: 12px;
+  display: block;
+  transform: rotate(270deg);
+  color: #CCC;
+  transition: color 0.25s ease-out, transform 0.25s ease-out;
+}
+
+.association-list-item-toggle.toggle-closed:before {
+  transform: rotate(90deg);
+}
+
+.association-list-item-toggle:hover:before {
+  color: #444;
+}

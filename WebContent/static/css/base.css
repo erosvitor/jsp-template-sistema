@@ -1,0 +1,186 @@
+:root {
+  --bg-page-header: #2F8DA4;
+  --color-page-header-title: #FFF;
+  
+  --bg-wrapper-main: #b8b8b8;
+  
+  --bg-button-default: #01667F;
+
+  --color-button-default: #FFF;
+  --bg-button-remove: #BC1F03;
+  --color-button-remove: #FFF;
+  --bg-button-cancel: #FAA732;
+  --color-button-cancel: #FFF;
+  
+  --msg-remove-confirm: #BC1F03;
+}
+
+/*******************************************************************************************
+ HTML, BODY
+********************************************************************************************/
+html, body {
+  font-family: sans-serif;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*******************************************************************************************
+ MENU
+********************************************************************************************/
+#main-menu {
+  width: 100%;
+  height: 43px;
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom: solid 1px #E4E4E4;
+  box-shadow: 0 2px 20px -3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 2px 20px -3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 2px 20px -3px rgba(0, 0, 0, 0.6);
+}
+
+#main-menu a .uk-icon-chevron-down {
+  font-size: 0.8em;
+  color: #AAA;
+}
+
+#main-menu a :not(.uk-icon-chevron-down) {
+  font-size: 1.4em;
+  vertical-align: middle;
+  width: 32px;
+  text-align: center;
+}
+
+/*******************************************************************************************
+ WRAPPER
+********************************************************************************************/
+#wrapper-main {
+  position: absolute;
+  top: 46px;
+  bottom: 25px;
+  right: 0;
+  left: 0;
+  font-size: 0.9em;
+  overflow: auto;
+  background-color: var(--bg-wrapper-main);
+}
+
+/*******************************************************************************************
+ PAGE
+********************************************************************************************/
+.page-header {
+  z-index: 2;
+  background-color: var(--bg-page-header);
+  height: 60px;
+  width: 100%;
+}
+
+.page-header h2 {
+  float: left;
+  font: 500 30px sans-serif;
+  margin-top: 12px;
+  margin-left: 12px;
+  color: var(--color-page-header-title);
+}
+
+.page-header h2 i {
+  width: 36px;
+  text-align: center;
+}
+
+.page-header-actions {
+  float: right;
+  margin: 12px 10px;
+  height: 38px;
+}
+
+.page-header-actions button {
+  float: right;
+  margin-left: 10px;
+}
+
+.page-content {
+  padding: 10px;
+}
+
+/*******************************************************************************************
+ BUTTON
+********************************************************************************************/
+.modal-actions {
+  height: 38px;
+  line-height: 38px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.modal-actions button {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.button-default {
+  outline: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--bg-button-default);
+  color: var(--color-button-default);
+  border: 0;
+  height: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-remove {
+  outline: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--bg-button-remove);
+  color: var(--color-button-remove);
+  border: 0;
+  height: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-cancel {
+  outline: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--bg-button-cancel);
+  color: var(--color-button-cancel);
+  border: 0;
+  height: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.search-length {
+  display: flex;
+  align-items: center;
+}
+
+/*******************************************************************************************
+ MESSAGES
+********************************************************************************************/
+.message-remove-confirm {
+  color: var(--msg-remove-confirm);
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="LogToConsole" target="SYSTEM_OUT">
+      <!-- %c{0} show only the class name and not package name + class name -->
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %p %c{0}: %m%n" />
+    </Console>
+    <File name="LogToFile" fileName="/opt/cts/logsapps/templatejsp-access.log">
+      <PatternLayout>
+        <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %p %c{0}: %m%n</Pattern>
+      </PatternLayout>
+    </File>
+    <RollingFile name="LogToRollingFile"
+                 fileName="/opt/cts/logsapps/templatejsp-actions.log" 
+                 filePattern="/opt/cts/logsapps/$${date:yyyy-MM}/templatejsp-actions-%d{yyyy-MM-dd}-%i.log.gz">
+      <PatternLayout>
+        <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %p %c{0}: %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy />
+        <SizeBasedTriggeringPolicy size="10 MB"/>
+      </Policies>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <!-- With the attribute 'additivity=false' the log will to be send only to file, not will be duplicated in console -->
+    <Logger name="com.ctseducare.template.service" level="info" additivity="false">
+      <AppenderRef ref="LogToRollingFile" />
+    </Logger>
+    <Root level="error">
+      <AppenderRef ref="LogToConsole" />
+    </Root>
+  </Loggers>
+</Configuration>

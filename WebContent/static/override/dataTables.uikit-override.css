@@ -1,0 +1,166 @@
+:root {
+  /*
+  --bg-table-title: #2FA481;
+  --color-table-title: #004C35;
+  */
+  --bg-table-title: #2F8DA4;
+  --color-table-title: #FFF;
+}
+
+/*******************************************************************************************
+ TABLE
+********************************************************************************************/
+table.dataTable {
+  width: 100% !important;
+  border-right: solid 1px #AAA;
+  border-left: solid 1px #AAA;
+  border-top: solid 1px #AAA;
+}
+
+table.dataTable thead th {
+  border: 0;
+  font-size: 16px;
+  height: 36px;
+  background-color: var(--bg-table-title);
+  color: var(--color-table-title);
+}
+
+table.dataTable thead th.align-center {
+  text-align: center;
+}
+
+table.dataTable tbody tr {
+  cursor: pointer;
+}
+
+table.dataTable tr.odd {
+  background: #F1F1F1;
+}
+
+table.dataTable tr.even {
+  background: #FFFFFF;
+}
+
+table.dataTable tr.odd td.sorting_1 {
+  background: #E7E7E7;
+}
+
+table.dataTable tr.even td.sorting_1 {
+  background: #F7F7F7;
+}
+
+.dataTables_wrapper {
+  box-shadow: 0 7px 15px -7px rgba(0, 0, 0, 0.5);
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  position: relative;
+  float: none;
+  background: #F7F7F7;
+  height: 36px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #AAA;
+  border-left: solid 1px #AAA;
+  border-right: solid 1px #AAA;
+}
+.dataTables_wrapper .dataTables_info {
+  float: none;
+  height: 33px;
+  text-align: center;
+  font-size: 13px;
+  margin-left: 10px;
+  color: #444;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  float: none;
+  text-align: left;
+}
+
+.dataTables_wrapper .dataTables_filter .uk-form-controls {
+  margin-right: 5px;
+}
+
+.dataTables_wrapper input[type="search"] {
+  margin-bottom: 5px !important;
+  color: #555 !important;
+  background-color: #EEE !important;
+  border: 1px solid #AAA !important;
+  box-shadow: 1px 1px 6px -2px #333;
+  font-size: 1.1em;
+  width: 100%;
+  min-height: 28px;
+  outline: 0;
+}
+
+.dataTables_wrapper input[type="search"]:focus {
+  background-color: #FFF;
+}
+
+.dataTables_wrapper .dataTables_length {
+  float: none;
+  padding-left: 0px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  margin-bottom: 5px !important;
+  color: #555 !important;
+  background-color: #EEE !important;
+  border: 1px solid #AAA !important;
+  box-shadow: 1px 1px 6px -2px #333;
+  font-size: 1.1em;
+  width: 100%;
+  min-height: 28px;
+  outline: 0;
+}
+
+.dataTables_wrapper .dataTables_filter .uk-form-icon i {
+  top: 47%;
+  margin-left: 5px;
+}
+
+/*******************************************************************************************
+ PAGGING
+********************************************************************************************/
+.paging_full_numbers a.paginate_button {
+  color: #777;
+  background: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.paging_full_numbers a.paginate_button.current {
+  background: 0;
+  border: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.paging_full_numbers a.first.paginate_button {
+  position: absolute;
+  left: 3px;
+  top: 7px;
+}
+
+.paging_full_numbers a.previous.paginate_button {
+  position: absolute;
+  left: 31px;
+  top: 7px;
+}
+
+.paging_full_numbers a.next.paginate_button {
+  position: absolute;
+  right: 31px;
+  top: 7px;
+}
+
+.paging_full_numbers a.last.paginate_button {
+  position: absolute;
+  right: 3px;
+  top: 7px;
+}
+
