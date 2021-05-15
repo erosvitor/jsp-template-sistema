@@ -7,11 +7,10 @@ O **JspTemplateSistema** é um projeto que disponibiliza recursos básicos de um
 O projeto utiliza as seguintes tecnologias:
 
 * Java 11
-* Apache Tomcat 9.0.35
-* Apache Maven 3.6.3
-* MySQL Database 5.7.33
-* MySQL Connector 8.0.23
-* Hibernate ORM 5.4.29
+* Apache Tomcat
+* Apache Mave
+* MySQL Server
+* Hibernate ORM
 * IDE Eclipse
 
 ## Documentação
