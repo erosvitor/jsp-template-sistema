@@ -1,7 +1,7 @@
 # JspTemplateSistema
 
 ## Descrição
-O **JspTemplateSistema** é um projeto que disponibiliza recursos básicos de uma aplicação Web Java EE. O projeto contém tela de acesso, cadastro de perfis, cadastro de usuários, listagens e toda a camada de acesso ao banco de dados.
+Projeto que disponibiliza recursos básicos de uma aplicação Web Java EE. O projeto contém tela de acesso, cadastro de perfis, cadastro de usuários, listagens e toda a camada de acesso ao banco de dados.
 
 ## Tecnologias
 O projeto utiliza as seguintes tecnologias:
