@@ -1,17 +1,30 @@
-# JspTemplateSistema
-
-## Descrição
-Projeto que disponibiliza recursos básicos de uma aplicação Web Java EE. O projeto contém tela de acesso, cadastro de perfis, cadastro de usuários, listagens e toda a camada de acesso ao banco de dados.
+## Sobre
+O projeto disponibiliza recursos básicos de uma aplicação Web Java EE. O projeto contém tela de acesso, cadastro de perfis, cadastro de usuários, listagens e toda a camada de acesso ao banco de dados.
 
 ## Tecnologias
-O projeto utiliza as seguintes tecnologias:
+As seguintes ferramentas foram utilizadas neste projeto:
 
-* Java 11
-* Apache Tomcat
-* Apache Mave
-* MySQL Server
-* Hibernate ORM
-* IDE Eclipse
+* [Java Oracle](https://www.oracle.com/java/)
+* [Apache Maven](https://maven.apache.org/)
+* [Apache Tomcat](https://tomcat.apache.org/)
+* [MySQL Server](https://www.mysql.com/)
+* [Hibernate ORM](https://hibernate.org/orm/)
+* [IDE Eclipse](https://www.eclipse.org/)
+
+## Requisitos
+Antes de iniciar você precisar ter o Git, JDK Oracle, Maven, Tomcat, MySQL e Eclipse IDE instalados.
+
+## Iniciando o projeto
+
+### Clonando o projeto
+```
+$ git clone https://github.com/erosvitor/jsp-template-sistema.git
+
+$ cd jsp-template-sistema
+```
+
+### Testando o projeto
+**Passo 1:** Iniciar a aplicação usando o Eclipse IDE.
 
 ## Documentação
 
@@ -42,6 +55,9 @@ O projeto utiliza as seguintes tecnologias:
 ![](referencias/04-usuarios-edicao-dados.png)
 
 ![](referencias/05-usuarios-edicao-perfis.png)
+
+## Licença
+Este projeto está sob licença do MIT. Para mais detalhes, ver o arquivo LICENSE.
 
 ## Histórico de lançamentos
 
