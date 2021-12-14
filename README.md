@@ -2,7 +2,7 @@
 O projeto disponibiliza recursos básicos de uma aplicação Web Java EE. O projeto contém tela de acesso, cadastro de perfis, cadastro de usuários, listagens e toda a camada de acesso ao banco de dados.
 
 ## Tecnologias
-As seguintes ferramentas foram utilizadas neste projeto:
+As seguintes tecnologias foram utilizadas neste projeto:
 
 * [Java Oracle](https://www.oracle.com/java/)
 * [Apache Maven](https://maven.apache.org/)
@@ -10,21 +10,6 @@ As seguintes ferramentas foram utilizadas neste projeto:
 * [MySQL Server](https://www.mysql.com/)
 * [Hibernate ORM](https://hibernate.org/orm/)
 * [IDE Eclipse](https://www.eclipse.org/)
-
-## Requisitos
-Antes de iniciar você precisar ter o Git, JDK Oracle, Maven, Tomcat, MySQL e Eclipse IDE instalados.
-
-## Iniciando o projeto
-
-### Clonando o projeto
-```
-$ git clone https://github.com/erosvitor/jsp-template-sistema.git
-
-$ cd jsp-template-sistema
-```
-
-### Testando o projeto
-**Passo 1:** Iniciar a aplicação usando o Eclipse IDE.
 
 ## Documentação
 
@@ -58,8 +43,3 @@ $ cd jsp-template-sistema
 
 ## Licença
 Este projeto está sob licença do MIT. Para mais detalhes, ver o arquivo LICENSE.
-
-## Histórico de lançamentos
-
-* 1.0.0 (2021-05-05)
-    * Primeira versão
